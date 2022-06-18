@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.head{
+   
+    background-image: url(./images/bg-hero-desktop.svg);
+   
+    
+}
+.container{
+    max-width:1440px ;
+    
+    height: 100vh;
+
+}
+
+.wrapper{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:40px 0 ;
+    margin: 0 2rem;
+}
+.hero img{
+    margin-left: auto;
+    display: block;
+    width: 50%;
+    height: auto;
+    float: right;
+}
+.header img{
+    width: 150px;
+    gap: 30px;
+    margin-bottom: 50px;
+    
+}
+.main{
+    display: block;
+    align-items: center;
+    gap: 10px;
+   
+    align-self: center;
+}
+.try{
+    background-color: white;
+    padding:  35px 100px 30px 100px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: hsl(192, 100%, 9%);
+    align-items: right;
+    float: right;
+   
+   
+   transition: width 2s , height 4s;
+}
+
+.try:hover {
+  width: 300px;
+}
+.text h1{
+    font-family: 'Poppins', sans-serif;
+    color:  hsl(192, 100%, 9%);
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+.text p{
+    font-family: 'Open Sans', sans-serif;
+    color:  black;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+.text button{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding:  45px 150px 45px 150px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    animation-name: example;
+    
+    position: relative;
+    animation-duration:14s;
+    animation-delay: 5s;
+
+}
+@keyframes example {
+  0%   {background-color:hsl(322, 100%, 66%); left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+
+}
+.row {
+    display: flex;
+    border: 5px solid transparent ;
+    box-shadow: 0px 0px 2px 2px hsl(220,13%, 95%);
+     border-radius: 15px;
+     width: 80%;
+     margin: auto;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 5px;
+  }
+  .column p{
+    font-family: 'Open Sans', sans-serif;
+    color:   black;
+    line-height: 1.8;
+    margin-bottom: 70px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .column h1{
+    font-family: 'Poppins', sans-serif;
+    color:  hsl(192, 100%, 9%);
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 2em;
+  }
+.ready2 button{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding:  35px 100px 30px 100px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding-top: 2em;
+    padding-bottom: 2em;
+   
+}
+.ready1   {
+    font-family: 'Poppins', sans-serif;
+    color:  hsl(192, 100%, 9%);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
+.ready{
+    padding: 30px;
+    border: 5px solid transparent ;
+     border-radius: 15px;
+     width: 50%;
+     margin: auto;
+     box-shadow: 0px 0px 2px 2px hsl(220,13%, 95%);
+     border-radius: 20px;
+     text-align: center;
+     position: relative;
+     top: 30px;
+     background-color: white;
+
+}
+
+footer{
+    background-color:  hsl(192, 100%, 9%);
+
+}
+
+.row2 {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding: 2em;
+
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .col2 {
+    flex: 25%;
+    padding: 5px;
+  }
+  .col2 p,th{
+    color: hsl(193, 100%, 96%) ;
+    font-size: 20px;
+
+  }
+  th{
+    padding: 10px;
+  }
+  .iconb {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 90px;
+  }
+  @media screen and (max-width: 750px) and (min-width:350px) {
+    body{
+       
+        padding: 40px 30px;
+    }
+    .wrapper{
+      flex-direction: column;
+    }
+    .header{
+      width: 80%;
+    }
+    
+.text{
+  text-align: center;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+ 
+}
+.hero{
+  width: 100%;
+  margin: auto;
+}
+}
